@@ -1,0 +1,9 @@
+.
+a=int(input())
+50
+b=int(input())
+30
+c=a-b
+print(c)
+20
+
