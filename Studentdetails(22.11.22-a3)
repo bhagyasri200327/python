@@ -1,0 +1,13 @@
+n=int(input("Enter Student sno:"))
+name=(input("Enter Student name:"))
+gen=(input("Enter Student gender:"))
+grp=input("Enter Student group:")
+add=input("Enter Student address:")
+phno=int(input("Enter Student phone number:"))
+print(' Student sno         : ',n);
+print(' Student name        : ',name);
+print(' Student gender      : ',gen);
+print(' Student group       : ',grp);
+print(' Student address     : ',add);
+print(' Student phone number: ',phno);
+
