@@ -1,0 +1,8 @@
+
+a=int(input("Ente a value:"))
+b=int(input("Ente b value:"))
+print('a+b=',a+b)
+print('a-b=',a-b)
+print('a*b=',a*b)
+print('a/b=',a/b)
+print('a%b=',a%b)
