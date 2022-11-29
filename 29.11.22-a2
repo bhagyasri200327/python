@@ -1,0 +1,20 @@
+empo=int(input('Enter employee number:'))
+ename=input('Enter employee name: ')
+designation=input('Enter designation:')
+basic_salary=int(input('Enter basic_salary:'))
+da=int(input('Enter da:'))
+ta=int(input('Enter ta:'))
+hra=int(input('Enter hra:'))
+netsalary=(basic_salary+da+hra+ta);
+print(netsalary)
+if netsalary>100000:
+    tax=(netsalary*10)/100;
+if netsalary>50000:
+    tax=(netsalary*7)/100;
+if netsalary>40000:
+    tax=(netsalary*4)/100;
+if netsalary>20000:
+    tax=(netsalary*2)/100;
+if netsalary<20000:
+    tax=0;
+print(tax)
