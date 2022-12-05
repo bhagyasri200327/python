@@ -1,0 +1,16 @@
+n=int(input("Enter how numbers your want "))
+num=int(input("Enter number 1: \n")) 
+largest=num
+smallest=num
+i=1
+while(i<n):
+    print("Enter number",i+1,":")
+    num=int(input())
+    if(num>largest):
+        largest=num 
+    if(num<smallest):
+        smallest=num     
+    i=i+1 
+print("The largest number is " , largest)
+print("The smallest number is " , smallest)
+print("The difference of largest and smallest numbers is",largest-smallest)
