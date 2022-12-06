@@ -1,0 +1,11 @@
+n=int(input('Enter a number:'))
+temp=n
+t=0
+while(n>0):
+ r=n%10
+ t=t*10+r
+ n=n//10
+if(t==temp): 
+ print("Palindrome number")
+else:
+ print("Not a Palindrome number")    
