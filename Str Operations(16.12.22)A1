@@ -1,0 +1,16 @@
+#a.
+s=input("Enter a string:")
+length=len(s)
+print(length)
+#b.
+s=input("Enter a string:")
+st=s.upper()
+print(st)
+#c.
+s=input("Enter a string:")
+st=s.lower()
+print(st)
+#d.
+s=input("Enter a string:")
+st=s.swapcase()
+print(st)
