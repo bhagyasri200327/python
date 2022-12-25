@@ -1,0 +1,3 @@
+n=int(input("Enter a number:"))
+sqrt=n**0.5
+print("Squareroot of given number is ",sqrt)
