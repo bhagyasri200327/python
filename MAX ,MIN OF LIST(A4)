@@ -1,0 +1,5 @@
+''' Maximum and Minimum from the given digit'''
+n=int(input())
+l=list(map(int,input().split()))
+print(max(l))
+print(min(l))
