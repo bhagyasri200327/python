@@ -1,0 +1,17 @@
+ply={}
+n=int(input('Enter no. of players: '))
+for i in range(1,n+1):
+    l=[]
+    pno=int(input('Enter player no.: '))
+    pname=input('Enter player name:')
+    matches=input('Enter no. of matches:')
+    runs=input('Enter no. of runs:')
+    l.append(pname)
+    l.append(matches)
+    l.append(runs)
+    ply[pno]=l
+print(ply)
+pno=int(input('Enter player no:'))
+print('player name:',ply[pno][0])
+print('no. of matches:',ply[pno][1])
+print('runs scored:',ply[pno][2])
