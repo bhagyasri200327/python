@@ -1,0 +1,20 @@
+st={}
+n=int(input('Enter no. of Students: '))
+for i in range(1,n+1):
+    l=[]
+    id=int(input('Enter id: '))
+    name=input('Enter student name:')
+    stream=input('Enter stream:')
+    branch=input('Enter branch:')
+    phno=input('Enter phno:')
+    l.append(name)
+    l.append(stream)
+    l.append(branch)
+    l.append(phno)
+    st[id]=l
+print(st)
+id=int(input('Enter student id:'))
+print('student name:',st[id][0])
+print('student stream:',st[id][1])
+print('college branch:',st[id][2])
+print('student phno:',st[id][3])
