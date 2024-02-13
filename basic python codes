@@ -1,0 +1,255 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNnYy5vL2AOkilhKMItNUmw",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/bhagyasri200327/python/blob/main/basic%20python%20codes\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "u94si_iG_EWH",
+        "outputId": "606cf002-ddd4-4c52-9a03-48ed00dba97a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello world!\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"hello world!\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Hello World!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_KcKihFm_bdA",
+        "outputId": "c7eed18f-8b04-41fc-c44b-4de6e9b23343"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello World!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= int(input(\"Enter 1st Element: \"))\n",
+        "\n",
+        "op= input(\"Enter the operator(+,-,*,/): \")\n",
+        "\n",
+        "b=int(input(\"Enter 2nd Element: \"))\n",
+        "\n",
+        "if op=='+':\n",
+        "\n",
+        "  print(a+b)\n",
+        "\n",
+        "elif op=='-':\n",
+        "\n",
+        "  print(a-b)\n",
+        "\n",
+        "elif op=='*':\n",
+        "\n",
+        "  print(a*b)\n",
+        "\n",
+        "elif op=='/':\n",
+        "\n",
+        "  if a!=0:\n",
+        "\n",
+        "     print(a/b)\n",
+        "\n",
+        "  else:\n",
+        "\n",
+        "    print(\"Error: Division by zero\")\n",
+        "\n",
+        "else:\n",
+        "\n",
+        "  print(\"Invalid\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-Vqhd6ECCkY-",
+        "outputId": "d240b3ff-7c17-4125-a5a4-ce81bf94e762"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter 1st Element: 15\n",
+            "Enter the operator(+,-,*,/): *\n",
+            "Enter 2nd Element: 2\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "p=float(input(\"Enter principal amount: \"))\n",
+        "\n",
+        "r=float(input(\"Enter rate of interest per annnum: \"))\n",
+        "\n",
+        "t=float(input(\"Enter time period in years: \"))\n",
+        "\n",
+        "SI=(p*r*t)/100\n",
+        "\n",
+        "print(SI)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LH4HyWgrDNbL",
+        "outputId": "908a9d0d-6e4f-436b-dbdd-fad6f42ee7b3"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter principal amount: 50000\n",
+            "Enter rate of interest per annnum: 2\n",
+            "Enter time period in years: 2\n",
+            "2000.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=int(input(\"Enter no. of terms: \"))\n",
+        "\n",
+        "n1,n2=0,1\n",
+        "\n",
+        "if n<=0:\n",
+        "\n",
+        "  print(\"Please, Enter valid term\")\n",
+        "\n",
+        "elif n==1:\n",
+        "\n",
+        "  print(\"Fibnocci Series: \",n1)\n",
+        "\n",
+        "else:\n",
+        "\n",
+        "  print(\"Fibnocci Series: \")\n",
+        "\n",
+        "  print(n1,end=\" \")\n",
+        "\n",
+        "  print(n2,end=\" \")\n",
+        "\n",
+        "  for i in range(2,n):\n",
+        "\n",
+        "    NT=n1+n2\n",
+        "\n",
+        "    print(NT,end=\" \")\n",
+        "\n",
+        "    n1,n2=n2,NT\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CvKnjphxDen0",
+        "outputId": "a0c128a1-8f4a-4b3f-b41f-14d2e43fa4af"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter no. of terms: 10\n",
+            "Fibnocci Series: \n",
+            "0 1 1 2 3 5 8 13 21 34 "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def factorial(n):\n",
+        "\n",
+        "  if n==0:\n",
+        "\n",
+        "    return 1\n",
+        "\n",
+        "  else:\n",
+        "\n",
+        "    return n*factorial(n-1)\n",
+        "\n",
+        "num=int(input(\"Enter Element: \"))\n",
+        "\n",
+        "print(\"Factorial of \",num,\" is \",factorial(num))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uX_kqDLyD0EP",
+        "outputId": "4d611445-63c8-4074-d34b-622c32f5926e"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Element: 6\n",
+            "Factorial of  6  is  720\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
